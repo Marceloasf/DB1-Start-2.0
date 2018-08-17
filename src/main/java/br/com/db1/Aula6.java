@@ -109,7 +109,7 @@ public class Aula6
 		Collections.reverse(parentes);
 	}
 	
-	public List<Integer> ParOuImpar(List<Integer> parametro){
+/*	public List<Integer> ParOuImpar(List<Integer> parametro){
 		List<Integer> pares = new ArrayList<Integer>();
 		List<Integer> impares = new ArrayList<Integer>();
 		Integer tamanho = parametro.size();
@@ -124,6 +124,6 @@ public class Aula6
 		juntaValores.addAll(pares);
 		juntaValores.addAll(impares);
 		return juntaValores;
-	}
+	}*/
 	
 }

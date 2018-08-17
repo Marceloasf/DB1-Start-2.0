@@ -118,7 +118,10 @@ public class Aula6Test{
 		valoresInteger.add(17);
 		valoresInteger.add(19);
 		
-		List<Integer> valoresMetodo = chamaMetodo.ParOuImpar(valoresInteger);
+	}
+}
+		
+	/*	List<Integer> valoresMetodo = chamaMetodo.ParOuImpar(valoresInteger);
 		
 		Assert.assertTrue(valoresMetodo.get(0) == 3);
 		Assert.assertTrue(valoresMetodo.get(1) == 6);
@@ -126,6 +129,5 @@ public class Aula6Test{
 		Assert.assertTrue(valoresMetodo.get(3) == 15);
 		Assert.assertTrue(valoresMetodo.get(4) == 17);
 		Assert.assertTrue(valoresMetodo.get(5) == 19);
-	}
+	}*/
 	
-}
