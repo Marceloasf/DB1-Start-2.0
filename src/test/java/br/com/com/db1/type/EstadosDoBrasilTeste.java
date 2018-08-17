@@ -1,5 +1,6 @@
 package br.com.com.db1.type;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import br.com.db1.type.EstadosDoBrasil;
@@ -10,8 +11,8 @@ public class EstadosDoBrasilTeste {
 	
 	@Test
 	public void retornaEstadosDoSulTeste(){
-		//System.out.println(chamaMetodoEnum.retornaEstadosDoNorte());
-		//Assert.assertEquals("Paraná", chamaMetodoEnum.retornaEstadosDoSul().get(0));
+		System.out.println(EstadosDoBrasil.retornaEstadosDoSul());
+		//Assert.assertTrue("Paraná", chamaMetodoEnum.retornaEstadosDoSul().contains(PARANA));
 	}
 	@Test
 	public void retornaEstadosDoSudesteTeste(){

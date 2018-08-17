@@ -34,73 +34,82 @@ public enum EstadosDoBrasil {
     TOCANTINS("Tocantins", "Norte");
 	
 	
-	
+
 	private String estados;
-	EstadosDoBrasil(String estados, String regiao){
-		this.estados = estados;
-	}
+	private String regiao;
 	
 	public String getEstados() {
 		return estados;
 	}
 	
-	public List<EstadosDoBrasil> retornaEstadosDoSul(){
+	public String getRegiao() {
+		return regiao;
+	}
+	
+	
+	
+	EstadosDoBrasil(String estados, String regiao){
+		this.estados = estados;
+		this.regiao = regiao;
+	}
+	
+	public static List<EstadosDoBrasil> retornaEstadosDoSul(){
 		List<EstadosDoBrasil> sul = new ArrayList<EstadosDoBrasil>();
-		sul.add(PARANA);
-		sul.add(SANTA_CATARINA);
-		sul.add(RIO_GRANDE_DO_SUL);
+		sul.add(EstadosDoBrasil.PARANA);
+		sul.add(EstadosDoBrasil.SANTA_CATARINA);
+		sul.add(EstadosDoBrasil.RIO_GRANDE_DO_SUL);
 		Collections.sort(sul);
 		System.out.println(sul);
 		return sul;
 	}
 	
-	public List<EstadosDoBrasil> retornaEstadosDoSudeste(){
+	public static List<EstadosDoBrasil> retornaEstadosDoSudeste(){
 		List<EstadosDoBrasil> sudeste = new ArrayList<EstadosDoBrasil>();
-		sudeste.add(ESPIRITO_SANTO);
-		sudeste.add(MINAS_GERAIS);
-		sudeste.add(RIO_DE_JANEIRO);
-		sudeste.add(SAO_PAULO);
+		sudeste.add(EstadosDoBrasil.ESPIRITO_SANTO);
+		sudeste.add(EstadosDoBrasil.MINAS_GERAIS);
+		sudeste.add(EstadosDoBrasil.RIO_DE_JANEIRO);
+		sudeste.add(EstadosDoBrasil.SAO_PAULO);
 		Collections.sort(sudeste);
 		System.out.println(sudeste);
 		return sudeste;
 	}
 	
-	public List<EstadosDoBrasil> retornaEstadosDoCentroOeste(){
+	public static List<EstadosDoBrasil> retornaEstadosDoCentroOeste(){
 		List<EstadosDoBrasil> centroOeste = new ArrayList<EstadosDoBrasil>();
-		centroOeste.add(DISTRITO_FEDERAL);
-		centroOeste.add(GOIAS);
-		centroOeste.add(MATO_GROSSO);
-		centroOeste.add(MATO_GROSSO_DO_SUL);
+		centroOeste.add(EstadosDoBrasil.DISTRITO_FEDERAL);
+		centroOeste.add(EstadosDoBrasil.GOIAS);
+		centroOeste.add(EstadosDoBrasil.MATO_GROSSO);
+		centroOeste.add(EstadosDoBrasil.MATO_GROSSO_DO_SUL);
 		Collections.sort(centroOeste);
 		System.out.println(centroOeste);
 		return centroOeste;
 	}
 	
-	public List<EstadosDoBrasil> retornaEstadosDoNorte(){
+	public static List<EstadosDoBrasil> retornaEstadosDoNorte(){
 		List<EstadosDoBrasil> norte = new ArrayList<EstadosDoBrasil>();
-		norte.add(AMAPA);
-		norte.add(AMAZONAS);
-		norte.add(ACRE);
-		norte.add(PARA);
-		norte.add(RONDONIA);
-		norte.add(TOCANTINS);
-		norte.add(RORAIMA);
+		norte.add(EstadosDoBrasil.AMAPA);
+		norte.add(EstadosDoBrasil.AMAZONAS);
+		norte.add(EstadosDoBrasil.ACRE);
+		norte.add(EstadosDoBrasil.PARA);
+		norte.add(EstadosDoBrasil.RONDONIA);
+		norte.add(EstadosDoBrasil.TOCANTINS);
+		norte.add(EstadosDoBrasil.RORAIMA);
 		Collections.sort(norte);
 		System.out.println(norte);
 		return norte;
 	}
 	
-	public List<EstadosDoBrasil> retornaEstadosDoNordeste(){
+	public static List<EstadosDoBrasil> retornaEstadosDoNordeste(){
 		List<EstadosDoBrasil> nordeste = new ArrayList<EstadosDoBrasil>();
-		nordeste.add(BAHIA);
-		nordeste.add(MARANHAO);
-		nordeste.add(ALAGOAS);
-		nordeste.add(SERGIPE);
-		nordeste.add(PIAUI);
-		nordeste.add(PERNAMBUCO);
-		nordeste.add(RIO_GRANDE_DO_NORTE);
-		nordeste.add(PARAIBA);
-		nordeste.add(CEARA);
+		nordeste.add(EstadosDoBrasil.BAHIA);
+		nordeste.add(EstadosDoBrasil.MARANHAO);
+		nordeste.add(EstadosDoBrasil.ALAGOAS);
+		nordeste.add(EstadosDoBrasil.SERGIPE);
+		nordeste.add(EstadosDoBrasil.PIAUI);
+		nordeste.add(EstadosDoBrasil.PERNAMBUCO);
+		nordeste.add(EstadosDoBrasil.RIO_GRANDE_DO_NORTE);
+		nordeste.add(EstadosDoBrasil.PARAIBA);
+		nordeste.add(EstadosDoBrasil.CEARA);
 		Collections.sort(nordeste);
 		System.out.println(nordeste);
 		return nordeste;
