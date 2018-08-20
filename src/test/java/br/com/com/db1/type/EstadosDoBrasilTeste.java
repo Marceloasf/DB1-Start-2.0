@@ -1,6 +1,6 @@
 package br.com.com.db1.type;
 
-import org.junit.Assert;
+//import org.junit.Assert;
 import org.junit.Test;
 
 import br.com.db1.type.EstadosDoBrasil;
